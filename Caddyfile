@@ -1,0 +1,11 @@
+stash.hahn1.one {
+    reverse_proxy 127.0.0.1:8334
+}
+
+dav.hahn1.one {
+    reverse_proxy 127.0.0.1:6065
+}
+
+collabora.hahn1.one {
+    reverse_proxy 127.0.0.1:9980
+}

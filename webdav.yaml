@@ -1,0 +1,24 @@
+# https://github.com/hacdias/webdav
+
+address: 127.0.0.1
+port: 6065
+
+prefix: /
+debug: false
+noSniff: false
+behindProxy: true
+directory: /root/storage
+permissions: CRUD
+rules: []
+rulesBehavior: overwrite
+
+log:
+  format: console
+  colors: true
+  outputs:
+  - stderr
+
+users:
+  - username: jonas
+    password: webdav4jonas
+    permissons: CRUD
