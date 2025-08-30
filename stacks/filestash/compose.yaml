@@ -3,6 +3,7 @@
 
 services:
   filestash:
+    container_name: filestash
     networks:
         - caddy
     image: machines/filestash:latest

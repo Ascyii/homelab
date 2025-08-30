@@ -1,0 +1,11 @@
+Main domains
+hahn1.one
+
+Subdomains
+stash.hahn1.one - Filestash
+stack.hahn1.one - Dockge
+dav.hahn1.one - Webdav
+vw.hahn1.one - Vaultwarden
+
+Email
+mail.hahn1.one - Maddy

@@ -1,8 +1,0 @@
-Main domains under my control.
-hahn1.one
-
-Some subdomains.
-stash.hahn1.one
-stack.hahn1.one
-dav.hahn1.one
-vw.hahn1.one

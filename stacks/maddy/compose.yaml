@@ -1,0 +1,18 @@
+services:
+  maddy:
+    container_name: maddy
+    environment:
+      - MADDY_HOSTNAME=mail.hahn1.one
+      - MADDY_DOMAIN=hahn1.one
+    volumes:
+      - maddydata:/data
+    ports:
+      - 25:25
+      - 143:143
+      - 465:465
+      - 587:587
+      - 993:993
+    image: foxcpp/maddy:0.7
+
+volumes:
+  maddydata: {}

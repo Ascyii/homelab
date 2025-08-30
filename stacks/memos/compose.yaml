@@ -1,0 +1,19 @@
+services:
+  memos:
+    image: neosmemo/memos:stable
+    container_name: memos
+    networks:
+      - caddy
+    labels:
+      caddy: note.hahn1.one
+      caddy.reverse_proxy: "{{upstreams 5230}}"
+    volumes:
+      - /root/data/memos:/var/opt/memos
+    environment:
+      - MEMOS_MODE=prod
+      - MEMOS_PORT=5230
+    restart: unless-stopped
+
+networks:
+  caddy:
+    external: true

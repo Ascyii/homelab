@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ln -sf ~/conf/.bashrc ~/.bashrc
-ln -sf ~/conf/start.sh ~/start.sh
+ln -sf ~/conf/scripts/start.sh ~/start.sh
 ln -sf ~/conf/stacks ~/stacks
 
 if [[ ! -d "$HOME/.config/nvim" ]]; then

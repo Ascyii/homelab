@@ -1,5 +1,6 @@
 services:
   webdav:
+    container_name: webdav
     networks:
       - caddy
     labels:
