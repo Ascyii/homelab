@@ -9,3 +9,15 @@ dav.hahn1.one {
 collabora.hahn1.one {
     reverse_proxy 127.0.0.1:9980
 }
+
+vw.hahn1.one {
+    reverse_proxy 127.0.0.1:8001
+}
+
+memos.hahn1.one {
+    reverse_proxy 127.0.0.1:5230
+}
+
+owl.hahn1.one {
+    reverse_proxy 127.0.0.1:5006
+}
