@@ -17,6 +17,7 @@ echo "Waiting for dockerd to be up."
 
 sleep 10
 
+# Manual stacks
 cd ~/serverconf/filestash
 docker compose up -d
 cd ~
@@ -29,6 +30,15 @@ cd ~/serverconf/memos
 docker compose up -d
 cd ~
 
-cd ~/serverconf/expenseowl
+cd ~/serverconf/glance
+docker compose up -d
+cd ~
+
+cd ~/serverconf/gittea
+docker compose up -d
+cd ~
+
+# Dockge for fast stacks
+cd ~/serverconf/dockge
 docker compose up -d
 cd ~

@@ -19,5 +19,13 @@ memos.hahn1.one {
 }
 
 owl.hahn1.one {
-    reverse_proxy 127.0.0.1:5006
+    reverse_proxy 127.0.0.1:5001
+}
+
+dash.hahn1.one {
+    reverse_proxy 127.0.0.1:8002
+}
+
+git.hahn1.one {
+    reverse_proxy 127.0.0.1:3000
 }

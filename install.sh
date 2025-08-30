@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ln -sf ~/serverconf/.bashrc ~/.bashrc
+ln -sf ~/serverconf/start.sh ~/start.sh
 
 sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
 
