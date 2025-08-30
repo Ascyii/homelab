@@ -2,12 +2,12 @@ stash.hahn1.one {
     reverse_proxy 127.0.0.1:8334
 }
 
-dav.hahn1.one {
-    reverse_proxy 127.0.0.1:6065
-}
-
 collabora.hahn1.one {
     reverse_proxy 127.0.0.1:9980
+}
+
+dav.hahn1.one {
+    reverse_proxy 127.0.0.1:6065
 }
 
 vw.hahn1.one {
@@ -16,10 +16,6 @@ vw.hahn1.one {
 
 memos.hahn1.one {
     reverse_proxy 127.0.0.1:5230
-}
-
-owl.hahn1.one {
-    reverse_proxy 127.0.0.1:5001
 }
 
 dash.hahn1.one {

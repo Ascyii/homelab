@@ -37,8 +37,3 @@ cd ~
 cd ~/serverconf/gittea
 docker compose up -d
 cd ~
-
-# Dockge for fast stacks
-cd ~/serverconf/dockge
-docker compose up -d
-cd ~

@@ -17,5 +17,5 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
-      - "3000:3000"
-      - "222:22"
+      - "127.0.0.1:3000:3000"
+      - "222:22" # This needs to be global

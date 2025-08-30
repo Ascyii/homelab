@@ -3,7 +3,7 @@ services:
     image: neosmemo/memos:stable
     container_name: memos
     ports:
-      - "5230:5230"
+      - "127.0.0.1:5230:5230"
     volumes:
       - ./memos-data:/var/opt/memos
     environment:
