@@ -1,0 +1,17 @@
+services:
+  vaultwarden:
+    networks:
+      - caddy
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    environment:
+      DOMAIN: https://vw.hahn1.one
+    volumes:
+      - /root/data/vaultwarden/:/data/
+    labels:
+      caddy: vw.hahn1.one
+      caddy.reverse_proxy: "{{upstreams 80}}"
+networks:
+  caddy:
+    external: true

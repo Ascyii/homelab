@@ -1,0 +1,24 @@
+Added a public key for root.
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBRCethASFSjGAivQQAWPqawKZVCkHF3ce99fQLDxLUs jonas@minoxy
+
+apt update && apt upgrade    
+    
+When nothing else specified the installation just followed the person in the link.    
+    
+Install nix and various via nix-env packages https://nixos.org/download/.    
+Make sure to only install non redundant binaries with nix and no services as they should be managed by t  he host itself.
+    
+Installed docker https://docs.docker.com/engine/install/debian/#install-using-the-repository.    
+    
+This is needed to run nix and other commands in tmux    
+unset __ETC_PROFILE_NIX_SOURCED    
+    
+Install a firewall ufw and block anything by default.    
+Expose ports only with ufw.
+
+Generated some certificates with certbot.
+
+Followed the tutorial for https://maddy.email/docker/ to install a mailserver that just works.
+The data folder is manually filled with the certificates for tls.
+
+Did some testing with docker containers like deleting them and starting them new.

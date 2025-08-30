@@ -1,0 +1,15 @@
+services:
+  webdav:
+    networks:
+      - caddy
+    labels:
+      caddy: dav.hahn1.one
+      caddy.reverse_proxy: "{{upstreams 6065}}"
+    volumes:
+      - /root/conf/stacks/webdav/config.yml:/config.yml # Absolute path for file
+      - /root/storage:/storage
+    image: ghcr.io/hacdias/webdav
+    command: -c /config.yml
+networks:
+  caddy:
+    external: true

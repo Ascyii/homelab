@@ -1,10 +1,10 @@
 #!/bin/bash
 
-ln -sf ~/serverconf/.bashrc ~/.bashrc
-ln -sf ~/serverconf/start.sh ~/start.sh
+ln -sf ~/conf/.bashrc ~/.bashrc
+ln -sf ~/conf/start.sh ~/start.sh
+ln -sf ~/conf/stacks ~/stacks
 
-sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
-
-nix-env -iA nixpkgs.neovim nixpkgs.gdu nixpkgs.docker nixpkgs.tmux nixpkgs.yazi nixpkgs.caddy nixpkgs.docker-compose nixpkgs.webdav nixpkgs.gnumake
-
-
+if [[ ! -d "$HOME/.config/nvim" ]]; then
+	echo "Installing nvim config"
+	git clone https://github.com/ascyii/nvim ~/.config/nvim
+fi

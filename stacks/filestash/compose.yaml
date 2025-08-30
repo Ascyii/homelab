@@ -1,0 +1,21 @@
+# To setup collabora
+# https://github.com/mickael-kerjean/filestash/issues/807#issuecomment-2727211515
+
+services:
+  filestash:
+    networks:
+        - caddy
+    image: machines/filestash:latest
+    restart: always
+    labels:
+      caddy: stash.hahn1.one
+      caddy.reverse_proxy: "{{upstreams 8334}}"
+    volumes:
+      - filestash:/app/data/state/
+
+volumes:
+  filestash: {}
+
+networks:
+  caddy:
+    external: true
