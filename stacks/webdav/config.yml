@@ -4,13 +4,9 @@ address: 0.0.0.0
 port: 6065
 
 prefix: /
-debug: false
-noSniff: false
 behindProxy: true
 directory: /storage
 permissions: CRUD
-rules: []
-rulesBehavior: overwrite
 
 log:
   format: console
@@ -20,5 +16,5 @@ log:
 
 users:
   - username: jonas
-    password: webdav4jonas
+    password: "{bcrypt}$2a$10$MUldjJlCP5B6gCE5kSxBVunW9KLtDjOZUXQ1H9rfxjyrjPtTbccV6"
     permissons: CRUD
