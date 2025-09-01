@@ -6,6 +6,7 @@ services:
       - MADDY_DOMAIN=hahn1.one
     volumes:
       - maddydata:/data
+    restart: always
     ports:
       - 25:25
       - 143:143
@@ -13,6 +14,6 @@ services:
       - 587:587
       - 993:993
     image: foxcpp/maddy:0.7
-
 volumes:
   maddydata: {}
+networks: {}

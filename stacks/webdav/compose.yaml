@@ -3,6 +3,7 @@ services:
     container_name: webdav
     networks:
       - caddy
+    restart: always
     labels:
       caddy: dav.hahn1.one
       caddy.reverse_proxy: "{{upstreams 6065}}"

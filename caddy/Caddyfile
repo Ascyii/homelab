@@ -1,0 +1,3 @@
+hahn1.one {
+	reverse_proxy host.docker.internal:1313
+}

@@ -4,7 +4,7 @@ services:
       - caddy
     image: vaultwarden/server:latest
     container_name: vaultwarden
-    restart: unless-stopped
+    restart: always
     environment:
       DOMAIN: https://vw.hahn1.one
     volumes:

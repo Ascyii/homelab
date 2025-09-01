@@ -5,18 +5,16 @@ services:
   filestash:
     container_name: filestash
     networks:
-        - caddy
+      - caddy
     image: machines/filestash:latest
-    restart: always
+    restart: unless-stopped
     labels:
       caddy: stash.hahn1.one
       caddy.reverse_proxy: "{{upstreams 8334}}"
     volumes:
       - filestash:/app/data/state/
-
 volumes:
   filestash: {}
-
 networks:
   caddy:
     external: true
