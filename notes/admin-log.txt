@@ -1,5 +1,4 @@
-Added a public key for root.
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBRCethASFSjGAivQQAWPqawKZVCkHF3ce99fQLDxLUs jonas@minoxy
+Added a public key for root through the strato installation phase.
 
 apt update && apt upgrade    
     
@@ -24,3 +23,8 @@ The data folder is manually filled with the certificates for tls.
 Did some testing with docker containers like deleting them and starting them new.
 
 Installed cronie and configured a crontab.
+
+Disabled exim4 service.
+
+You have to enable connections through the firewall from docker with
+ufw allow from 172.18.0.0/16 to any port 1313

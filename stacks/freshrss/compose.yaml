@@ -1,0 +1,27 @@
+services:
+  freshrss:
+    image: freshrss/freshrss:latest
+    container_name: freshrss
+    restart: unless-stopped
+    labels:
+      caddy: rss.hahn1.one
+      caddy.reverse_proxy: "{{upstreams 80}}"
+    networks:
+      - caddy
+    logging:
+      options:
+        max-size: 10m
+    volumes:
+      - data:/var/www/FreshRSS/data
+      - extensions:/var/www/FreshRSS/extensions
+    environment:
+      TZ: Europe/Paris
+      CRON_MIN: '3,33'
+
+volumes:
+  data:
+  extensions:
+
+networks:
+  caddy:
+    external: true
