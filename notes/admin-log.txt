@@ -22,3 +22,5 @@ Followed the tutorial for https://maddy.email/docker/ to install a mailserver th
 The data folder is manually filled with the certificates for tls.
 
 Did some testing with docker containers like deleting them and starting them new.
+
+Installed cronie and configured a crontab.

@@ -1,0 +1,16 @@
+btop-1.4.4
+caddy-2.10.2
+ffmpeg-7.1.1
+gdu-5.31.0
+hugo-0.148.2
+lazygit-0.54.2
+neomutt-20250510
+neovim-0.11.3
+nix-2.31.0
+nss-cacert-3.113.1
+ripgrep-14.1.1
+rsync-3.4.1
+stow-2.4.1
+tmux-3.5a
+unison-2.53.7
+yazi-25.5.31
